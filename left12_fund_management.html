@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/iconfont.css">
+	<link rel="stylesheet" href="css/global.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="js/jquery.1.12.4.min.js" charset="UTF-8"></script>
+	<script src="js/bootstrap.min.js" charset="UTF-8"></script>
+	<script src="js/swiper.min.js" charset="UTF-8"></script>
+	<script src="js/global.js" charset="UTF-8"></script>
+	<script src="js/jquery.DJMask.2.1.1.js" charset="UTF-8"></script>
+	<title>汉服--古韵记</title>
+</head>
+<body>
+	<!-- 顶部tab -->
+	<div class="tab-header">
+		<div class="inner">
+			<div class="pull-left">
+				<div class="pull-left">你好，欢迎来到<span class="cr">汉服--古韵记</span></div>
+			</div>
+			<div class="pull-right">
+				<a href="tab_login.html">登录</a>
+				<a href="tab_login.html?p=register">注册</a>
+				<a href="tab_personal.html">个人</a>
+				<a href="left21_my_order.html">订单</a>
+				<a href="left13_integral_platform.html">积分</a>
+				<a href="left34_normal_problem%20.html">问题</a>
+			</div>
+		</div>
+	</div>
+	<!-- 顶部标题 -->
+	<div class="bgf5 clearfix">
+		<div class="top-user">
+			<div class="inner">
+				<a class="logo" href="index.html"><img src="images/icons/logo.png" alt="汉服--古韵记" class="cover"></a>
+				<div class="title">个人中心</div>
+			</div>
+		</div>
+	</div>
+	<div class="content clearfix bgf5">
+		<section class="user-center inner clearfix">
+			<div class="pull-left bgf">
+				<a href="tab_personal.html" class="title">汉服俱乐部欢迎您</a>
+				<dl class="user-center__nav">
+					<dt>帐户信息</dt>
+					<a href="left11_personal_profile.html"><dd>个人资料</dd></a>
+					<a href="left12_fund_management.html"><dd class="active">资金管理</dd></a>
+					<a href="left13_integral_platform.html"><dd>积分平台</dd></a>
+					<a href="left14_shipping_address.html"><dd>收货地址</dd></a>
+					<a href="left15_my_coupon.html"><dd>我的优惠券</dd></a>
+					<a href="left16_modify_pwd.html"><dd>修改密码</dd></a>
+				</dl>
+				<dl class="user-center__nav">
+					<dt>订单中心</dt>
+					<a href="left21_my_order.html"><dd>我的订单</dd></a>
+					<a href="left22_my_collection.html"><dd>我的收藏</dd></a>
+					<a href="left23_refund_purchase.html"><dd>退款/退货</dd></a>
+				</dl>
+				<dl class="user-center__nav">
+					<dt>服务中心</dt>
+					<a href="left31_logistics_query.html"><dd>物流查询</dd></a>
+					<a href="left32_after_service.html"><dd>售后服务</dd></a>
+					<a href="left33_user_agreement.html"><dd>用户协议</dd></a>
+					<a href="left34_normal_problem%20.html"><dd>常见问题</dd></a>
+				</dl>
+				<dl class="user-center__nav">
+					<dt>新手上路</dt>
+					<a href="left41_how_agent.html"><dd>如何成为代理商</dd></a>
+					<a href="left42_anency_grounding.html"><dd>代销商上架教程</dd></a>
+					<a href="left43_distributor_problem.html"><dd>分销商常见问题</dd></a>
+				</dl>
+			</div>
+			<div class="pull-right">
+				<div class="user-content__box clearfix bgf">
+					<div class="title">账户信息-资金管理</div>
+					<div class="assets-box">
+						<samll class="c6">账户余额：</samll>
+						<samll class="cr">¥</samll>
+						<b class="fz16 cr">1000.0</b>
+						<ul class="nav pull-right" role="tablist">
+							<li role="presentation" class="active"><a href="#add" aria-controls="add" role="tab" data-toggle="tab">充值</a></li>
+							<li role="presentation" class=""><a href="#up" aria-controls="up" role="tab" data-toggle="tab">提现</a></li>
+							<li role="presentation" class=""><a href="#log" aria-controls="log" role="tab" data-toggle="tab">交易记录</a></li>
+						</ul>
+					</div>
+					<div class="tab-content">
+						<div role="tabpanel" class="tab-pane fade in active" id="add">
+							<form action="" class="user-setting__form" role="form">
+								<div class="form-group">
+									<label for="add-money">充值金额</label>
+									<input id="add-money" class="assets-control" placeholder="输入您要充值的金额" type="text">
+								</div>
+								<div class="form-group">
+									<label for="add-pwd">支付密码</label>
+									<input id="add-pwd" class="assets-control" placeholder=""type="password"></input>
+								</div>
+								<div class="form-group">
+									<label for="note">支付方式（手续费 <span id="tip">0</span>）</label>
+									<div class="pay-method-box tags-box">
+										<label><input type="radio" name="pay_method" value="Alipay"><i class="pay-method__img alipay"></i></label>
+										<label><input type="radio" name="pay_method" value="WeChat"><i class="pay-method__img wechat"></i></label>
+									</div>
+								</div>
+								<div class="user-form-group tags-box">
+									<button type="button" class="btn ">立即支付</button>
+									<button type="reset" class="btn ">重置</button>
+								</div>
+							</form>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="up">
+							<form action="" class="user-setting__form" role="form">
+								<div class="form-group">
+									<label for="up-money">提现金额</label>
+									<input id="up-money" class="assets-control" placeholder="输入您要提现的金额" type="text">
+									<span class="help-block fz12">注：单次提现，提现金额不低于100.0元</span>
+								</div>
+								<div class="form-group">
+									<label for="up-name">姓名</label>
+									<input id="up-name" class="assets-control" placeholder="输入您的姓名" type="text">
+								</div>
+								<div class="form-group">
+									<label for="up-number">银行账号</label>
+									<input id="up-number" class="assets-control" placeholder="银行账号" type="text">
+								</div>
+								<div class="form-group">
+									<label for="up-phone">手机号码</label>
+									<input id="up-phone" class="assets-control" placeholder="请输入您的联系号码" type="text">
+								</div>
+								<div class="user-form-group tags-box">
+									<button type="button" class="btn ">申请提现</button>
+									<button type="reset" class="btn ">重置</button>
+								</div>
+							</form>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="log">
+							<div class="bs-example" data-example-id="hoverable-table">
+								<table class="assets-table table table-bordered table-hover c6 text-center">
+									<thead>
+										<tr>
+											<th>操作时间</th>
+											<th>类型</th>
+											<th>金额</th>
+											<th>备注</th>
+											<th>状态</th>
+											<th>操作</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>2012.03.20 17:20</td>
+											<td>充值</td>
+											<td>100.00</td>
+											<td>充值代销</td>
+											<td><span class="text-primary">未确认</span></td>
+											<td><a href="">付款</a> <a href="">取消</a></td>
+										</tr>
+										<tr>
+											<td>2014.09.20 17:20</td>
+											<td>提现</td>
+											<td>200.00</td>
+											<td>提现金额</td>
+											<td><span class="text-success">完成</span></td>
+											<td>-</td>
+										</tr>
+										<tr>
+											<td>2018.03.10 15:43</td>
+											<td>提现</td>
+											<td>500.00</td>
+											<td>无</td>
+											<td><span class="text-success">完成</span></td>
+											<td>-</td>
+										</tr>
+										<tr>
+											<td>2018.06.10 07:10</td>
+											<td>提现</td>
+											<td>300.00</td>
+											<td>提现金额</td>
+											<td><span class="text-info">提现中</span></td>
+											<td><a href="">联系客服</a></td>
+										</tr>
+
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<!-- 右侧菜单 -->
+	<div class="right-nav">
+		<ul class="r-with-gotop">
+			<li class="r-toolbar-item">
+				<a href="tab_personal.html" class="r-item-hd">
+					<i class="iconfont icon-user" data-badge="0"></i>
+					<div class="r-tip__box"><span class="r-tip-text">用户中心</span></div>
+				</a>
+			</li>
+			<li class="r-toolbar-item">
+				<a href="shopping_cart.html" class="r-item-hd">
+					<i class="iconfont icon-cart"></i>
+					<div class="r-tip__box"><span class="r-tip-text">购物车</span></div>
+				</a>
+			</li>
+			<li class="r-toolbar-item">
+				<a href="left22_my_collection.html" class="r-item-hd">
+					<i class="iconfont icon-aixin"></i>
+					<div class="r-tip__box"><span class="r-tip-text">我的收藏</span></div>
+				</a>
+			</li>
+			<li class="r-toolbar-item">
+				<a href="" class="r-item-hd">
+					<i class="iconfont icon-liaotian"></i>
+					<div class="r-tip__box"><span class="r-tip-text">联系客服</span></div>
+				</a>
+			</li>
+			<li class="r-toolbar-item">
+				<a href="right_message_board.html" class="r-item-hd">
+					<i class="iconfont icon-liuyan"></i>
+					<div class="r-tip__box"><span class="r-tip-text">留言反馈</span></div>
+				</a>
+			</li>
+			<li class="r-toolbar-item to-top">
+				<i class="iconfont icon-top"></i>
+				<div class="r-tip__box"><span class="r-tip-text">返回顶部</span></div>
+			</li>
+		</ul>
+		<script>
+			$(document).ready(function(){ $('.to-top').toTop({position:false}) });
+		</script>
+	</div>
+	<!-- 底部信息 -->
+	<div class="footer">
+		<div class="footer-tags">
+			<div class="tags-box inner">
+				<div class="tag-div">
+					<img src="images/icons/footer_1.gif" alt="厂家直供">
+				</div>
+				<div class="tag-div">
+					<img src="images/icons/footer_2.gif" alt="一件代发">
+				</div>
+				<div class="tag-div">
+					<img src="images/icons/footer_3.gif" alt="美工活动支持">
+				</div>
+				<div class="tag-div">
+					<img src="images/icons/footer_4.gif" alt="信誉认证">
+				</div>
+			</div>
+		</div>
+		<div class="footer-links inner">
+			<dl>
+				<dt>服务中心</dt>
+				<a href="left32_after_service.html"><dd>售后服务</dd></a>
+				<a href="left33_user_agreement.html"><dd>用户协议</dd></a>
+				<a href="left34_normal_problem%20.html"><dd>常见问题</dd></a>
+			</dl>
+			<dl>
+				<dt>新手上路</dt>
+				<a href="left41_how_agent.html"><dd>如何成为代理商</dd></a>
+				<a href="left42_anency_grounding.html"><dd>代销商上架教程</dd></a>
+				<a href="left43_distributor_problem.html"><dd>分销商常见问题</dd></a>
+			</dl>
+		</div>
+		<div class="copy-box clearfix">
+			<ul class="copy-links">
+				<a href="tab_sales_agent.html"><li>网店代销</li></a>
+				<a href="right_contract_us.html"><li>联系我们</li></a>
+				<a href="left41_how_agent.html"><li>新手上路</li></a>
+			</ul>
+			<!-- 版权 -->
+			<p class="copyright">
+				© 2018  汉服-古韵记 版权所有，并保留所有权利<br>
+				ICP备案证书号：ABCDEFGHIJKLMN-2&nbsp;&nbsp;&nbsp;&nbsp;**省**市**县**镇**街道&nbsp;&nbsp;&nbsp;&nbsp;Tel: 18242058825&nbsp;&nbsp;&nbsp;&nbsp;E-mail: 1799960957@qq.com
+			</p>
+		</div>
+	</div>
+</body>
+</html>
